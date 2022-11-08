@@ -46,7 +46,7 @@ If some chains are not needed just remove chain section from configuration file.
 
 
 ## Usage
-```bash
+```
 (venv) $ cosm_gov_watch              
 +---------------------------------------------------------------------------------------------------------------------------------+
 |                                                         Chain Proposals                                                         |
