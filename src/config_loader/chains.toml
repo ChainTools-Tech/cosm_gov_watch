@@ -73,7 +73,7 @@ name = "fetchai"
 displayname = "Fetch.ai"
 chain-id = "fetchhub-4"
 rpc = "https://rpc-fetchhub.fetch.ai:443"
-api = "https://rest-fetchhub.fetch.ai:3"
+api = "https://rest-fetchhub.fetch.ai:443"
 
 [[chains]]
 name = "firmachain"
@@ -170,7 +170,7 @@ api = "https://api.rizon.chaintools.tech:443"
 name = "sentinel"
 displayname = "Sentinel"
 chain-id = "sentinelhub-2"
-rpc = "https://rpc.sentinel.chaintools.tech:443
+rpc = "https://rpc.sentinel.chaintools.tech:443"
 api = "https://api.sentinel.chaintools.tech:443"
 
 [[chains]]
