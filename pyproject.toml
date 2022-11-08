@@ -1,0 +1,35 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools", "wheel"]  # PEP 508 specifications.
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cosm_gov_watch"
+version = "1.0.0"
+description = "Cosmos/Tendermint-based chains governance proposal watcher."
+readme = "README.md"
+authors = [{ name = "qf3l3k", email = "support@chaintools.tech" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["command", "monitoring", "cosmos", "blockchain"]
+dependencies = [
+    'build==0.8.0',
+    'colorama==0.4.5',
+    'packaging==21.3',
+    'pep517==0.13.0',
+    'prettytable==3.4.1',
+    'pyparsing==3.0.9',
+    'tomli==2.0.1',
+    'wcwidth==0.2.5'
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/chaintools/cosm_gov_watch"
+
+[project.scripts]
+cosm_gov_watch = "cosm_gov_watch.__main__:main"
