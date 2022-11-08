@@ -9,8 +9,8 @@ api = "https://rest.getbze.com:443"
 name = "bitsong"
 displayname = "BitSong"
 chain-id = "bitsong-2a"
-rpc = "https://bitsong.rpc.qf3l3k.cloud:444"
-api = "https://bitsong.api.qf3l3k.cloud:444"
+rpc = "https://rpc.bitsong.chaintools.tech:443"
+api = "https://api.bitsong.chaintools.tech:443"
 
 [[chains]]
 name = "carbon"
@@ -45,7 +45,7 @@ name = "decentr"
 displayname = "Decentr"
 chain-id = "mainnet-3"
 rpc = "https://rpc.decentr.chaintools.tech:443"
-api = "https://api.decentr.chaintools.tech:444"
+api = "https://api.decentr.chaintools.tech:443"
 
 [[chains]]
 name = "desmos"
@@ -58,8 +58,8 @@ api = "https://api.mainnet.desmos.network:443"
 name = "emoney"
 displayname = "e-Money"
 chain-id = "emoney-3"
-rpc = "https://rpc-emoney.keplr.app:443"
-api = "https://lcd-emoney.keplr.app:443"
+rpc = "https://rpc-emoney-ia.cosmosia.notional.ventures:443"
+api = "https://api-emoney-ia.cosmosia.notional.ventures:443"
 
 [[chains]]
 name = "evmos"
@@ -72,8 +72,8 @@ api = "https://rest-evmos.ecostake.com:443"
 name = "fetchai"
 displayname = "Fetch.ai"
 chain-id = "fetchhub-4"
-rpc = "https://fetchai.rpc.qf3l3k.cloud:444"
-api = "https://fetchai.api.qf3l3k.cloud:444"
+rpc = "https://rpc-fetchhub.fetch.ai:443"
+api = "https://rest-fetchhub.fetch.ai:3"
 
 [[chains]]
 name = "firmachain"
@@ -170,8 +170,8 @@ api = "https://api.rizon.chaintools.tech:443"
 name = "sentinel"
 displayname = "Sentinel"
 chain-id = "sentinelhub-2"
-rpc = "https://sentinel.rpc.qf3l3k.cloud:444"
-api = "https://sentinel.api.qf3l3k.cloud:444"
+rpc = "https://rpc.sentinel.chaintools.tech:443
+api = "https://api.sentinel.chaintools.tech:443"
 
 [[chains]]
 name = "sifchain"
