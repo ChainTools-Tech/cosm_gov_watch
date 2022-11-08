@@ -45,7 +45,7 @@ name = "decentr"
 displayname = "Decentr"
 chain-id = "mainnet-3"
 rpc = "https://rpc.decentr.chaintools.tech:443"
-api = "https://api.decentr.chaintools.tech:443"
+api = "https://api.decentr.chaintools.tech:444"
 
 [[chains]]
 name = "desmos"
@@ -53,6 +53,13 @@ displayname = "Desmos"
 chain-id = "desmos-mainnet"
 rpc = "https://rpc.mainnet.desmos.network:443"
 api = "https://api.mainnet.desmos.network:443"
+
+[[chains]]
+name = "emoney"
+displayname = "e-Money"
+chain-id = "emoney-3"
+rpc = "https://rpc-emoney.keplr.app:443"
+api = "https://lcd-emoney.keplr.app:443"
 
 [[chains]]
 name = "evmos"

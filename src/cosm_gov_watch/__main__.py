@@ -18,13 +18,20 @@ def main():
                                  "--",
                                  "--"])
         governance = request_governance(chain["api"])
-        for proposal in governance['proposals']:
-            if proposal['status'] == "PROPOSAL_STATUS_VOTING_PERIOD":
-                proposals_table.add_row([chain["name"],
-                                         proposal['proposal_id'],
-                                         proposal['content']['@type'].rsplit('.', 1)[-1],
-                                         proposal['content']['title'][:60],
-                                         proposal['status']])
+        try:
+            for proposal in governance['proposals']:
+                if proposal['status'] == "PROPOSAL_STATUS_VOTING_PERIOD":
+                    proposals_table.add_row([chain["name"],
+                                             proposal['proposal_id'],
+                                             proposal['content']['@type'].rsplit('.', 1)[-1],
+                                             proposal['content']['title'][:60],
+                                             proposal['status']])
+        except KeyError as e:
+            proposals_table.add_row([chain["name"],
+                                     "API error",
+                                     "API error",
+                                     "API error",
+                                     "API error"])
 
     print(proposals_table)
 
