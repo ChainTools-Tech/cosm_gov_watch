@@ -73,5 +73,5 @@ In case of any questions contact support@chaintools.tech
 
 
 ## ToDo
-- [ ] api_requests : error handling
+- [X] api_requests : error handling
 - [ ] load_config : error handling
