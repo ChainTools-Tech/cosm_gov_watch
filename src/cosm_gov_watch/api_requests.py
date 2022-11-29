@@ -8,7 +8,8 @@ def request_governance(api_url):
         api_response = requests.get(request_url)
         json_response = json.loads(api_response.text)
     except (requests.exceptions.ConnectionError,
-            requests.exceptions.ConnectTimeout):
+            requests.exceptions.ConnectTimeout,
+            json.decoder.JSONDecodeError):
         api_response = {}
         api_response['error'] = 'API connection failure'
         json_response = api_response
