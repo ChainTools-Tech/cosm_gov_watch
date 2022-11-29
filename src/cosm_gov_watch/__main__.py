@@ -17,6 +17,7 @@ def main():
                                  "--",
                                  "--",
                                  "--"])
+        print(f'\rProcessing: {chain["name"]}', end = " ")
         governance = request_governance(chain["api"])
         try:
             for proposal in governance['proposals']:
@@ -33,6 +34,7 @@ def main():
                                      "API error",
                                      "API error"])
 
+    print (f'\rProcessing done. Displaying results.')
     print(proposals_table)
 
 
