@@ -6,6 +6,7 @@ Even if particular chain has no active proposals it will be listed in table.
 
 ## Requirements
  - Python 3.8 or newer
+ - Python Virtual Environment
 
 ## Installation
 
