@@ -17,7 +17,7 @@ def main():
                                  "--",
                                  "--",
                                  "--"])
-        print(f'\rProcessing: {chain["name"]}', end = " ")
+        print(f'\rProcessing: {chain["name"]} -> calling API: {chain["api"]}', end = " "*20)
         governance = request_governance(chain["api"])
         try:
             for proposal in governance['proposals']:
