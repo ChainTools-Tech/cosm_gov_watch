@@ -4,7 +4,7 @@ Governance proposals information is pulled via API endpoint.
 Once information is collected script produces table with collected data.
 Even if particular chain has no active proposals it will be listed in table.
 
-Installation Video: https://odysee.com/@ChainToolsScripts:5/ct_Scripts_cosm_gov_watch:4
+[Installation Video](https://odysee.com/@ChainToolsScripts:5/ct_Scripts_cosm_gov_watch:4)
 
 ## Requirements
  - Python 3.8 or newer
