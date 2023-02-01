@@ -15,10 +15,10 @@ threads = []
 def process_data(chain_name, chain_api):
     governance = request_governance(chain_api)
     proposals_table.add_row([chain_name,
-                             "--",
-                             "--",
-                             "--",
-                             "--"])
+                             "",
+                             "",
+                             "",
+                             ""])
     try:
         for proposal in governance['proposals']:
             if proposal['status'] == "PROPOSAL_STATUS_VOTING_PERIOD":
@@ -33,6 +33,12 @@ def process_data(chain_name, chain_api):
                                  "API error",
                                  e,
                                  "API error"])
+
+    proposals_table.add_row(["--------",
+                             "--------",
+                             "--------",
+                             "--------",
+                             "--------"])
 
 def main():
     chains = load_chains()
