@@ -27,7 +27,7 @@ def process_data(chain_name, chain_api):
                                          proposal['content']['@type'].rsplit('.', 1)[-1],
                                          proposal['content']['title'][:60],
                                          proposal['status']])
-    except KeyError as e:
+    except (KeyError, TypeError) as e:
         proposals_table.add_row([f'  {chain_name}',
                                  "API error",
                                  "API error",

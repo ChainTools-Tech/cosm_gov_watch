@@ -1,13 +1,14 @@
-import os
+import pkg_resources
 import sys
 import tomli
 
+from importlib import resources
+
 
 def load_chains():
-    chains_config_path = os.path.abspath(os.path.dirname(__file__)) + '/chains.toml'
     try:
-        with open(chains_config_path, mode="rb") as chains_file:
-            loaded_chains = tomli.load(chains_file)
+        with resources.open_binary("config", "chains.toml") as config_chains:
+            loaded_chains = tomli.load(config_chains)
     except IOError:
         sys.exit("Can't load chains.toml.")
 

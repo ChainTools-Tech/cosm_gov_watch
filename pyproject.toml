@@ -33,3 +33,9 @@ Homepage = "https://github.com/chaintools/cosm_gov_watch"
 
 [project.scripts]
 cosm_gov_watch = "cosm_gov_watch.__main__:main"
+
+[options]
+include_package_data = "True"
+
+[options.package_data]
+config = "config/chains.toml"
